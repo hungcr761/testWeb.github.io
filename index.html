@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonders of the Solar System</title>
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Skip to Main Content link -->
+    <a href="#main-content">Skip to Main Content</a>
 
     <header>
-        <h1>Wonders of the Solar System</h1>
-        <p>Explore some of the most fascinating celestial bodies in our cosmic neighborhood.</p>
+        <h1>Sample Website</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Fascinating Celestial Bodies</h2>
-            <ul>
-                <li>Jupiter’s Great Red Spot – A massive storm persisting for centuries.</li>
-                <li>Saturn’s Rings – One of the most breathtaking sights in the solar system.</li>
-                <li>Olympus Mons – The largest volcano on Mars and the entire solar system.</li>
-            </ul>
+    <nav>
+        <!-- Web-sourced logo image -->
+        <img src="https://images.unsplash.com/photo-1626775266036-116a5c148c52?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mountain Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="grid">
+            <div>
+                <!-- Web-sourced image for grid item 1 -->
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nature Scene 1">
+                <p>This is a beautiful nature scene.</p>
+            </div>
+            <div>
+                <!-- Web-sourced image for grid item 2 -->
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nature Scene 2">
+                <p>Another stunning view.</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Celestial Images</h2>
-            <figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png" 
-                     alt="Jupiter planet" width="300">
-                <figcaption>Jupiter - The largest planet in our solar system.</figcaption>
-            </figure>
-            <br>
-
-            <figure>
-                <img src="https://www.solarsystemscope.com/spacepedia/images/handbook/renders/saturn.png" 
-                     alt="Saturn's rings" width="300">
-                <figcaption>Saturn’s stunning rings.</figcaption>
-            </figure>
-            <br>
-
-            <figure>
-                <img src="https://designyoutrust.com/wp-content/uploads/2020/09/2-35.jpg" 
-                     alt="Olympus Mons on Mars" width="300">
-                <figcaption>Olympus Mons - The tallest volcano in the solar system.</figcaption>
-            </figure>
+        <section class="flex">
+            <div>
+                <!-- Web-sourced image for flex item 1 -->
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Forest">
+                <p>Flex item 1: A forest view.</p>
+            </div>
+            <div>
+                <!-- Web-sourced image for flex item 2 -->
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Lake">
+                <p>Flex item 2: A serene lake.</p>
+            </div>
+            <div>
+                <!-- Web-sourced image for flex item 3 -->
+                <img src="https://images.unsplash.com/photo-1659935405041-1e76d8bd9de6?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountain">
+                <p>Flex item 3: A majestic mountain.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Learn more about space at 
-            <a href="https://www.nasa.gov" target="_blank">NASA’s official website</a>.
-        </p>
+        <p>© Website | Images from <a href="https://unsplash.com">Unsplash</a></p>
     </footer>
-
 </body>
 </html>
