@@ -60,5 +60,31 @@
     <footer>
         <p>© Website | Images from <a href="https://unsplash.com">Unsplash</a></p>
     </footer>
+    <script>
+    // Alert when the page loads
+    window.onload = function() {
+        alert("Welcome to the Sample Website!");
+    };
+
+    // Add hover effect to images
+    const images = document.querySelectorAll("img");
+    images.forEach(img => {
+        img.addEventListener("mouseenter", () => {
+            img.style.border = "3px solid teal";
+        });
+        img.addEventListener("mouseleave", () => {
+            img.style.border = "none";
+        });
+    });
+
+    // Alert when a nav link is clicked
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault(); // prevent the default navigation
+            alert(`You clicked on: ${link.textContent}`);
+        });
+    });
+    </script>
 </body>
 </html>
