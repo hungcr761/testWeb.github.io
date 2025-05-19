@@ -1,90 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Page</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<title>Good Staste Family </title>
+
+	<!--Embed CSS here-->
+	<link rel="stylesheet" href="css/styleindex.css" />
+
+
 </head>
+
 <body>
-    <!-- Skip to Main Content link -->
-    <a href="#main-content">Skip to Main Content</a>
 
-    <header>
-        <h1>Sample Website</h1>
-    </header>
+	<div class="header"> <!--content header-->
 
-    <nav>
-        <!-- Web-sourced logo image -->
-        <img src="https://images.unsplash.com/photo-1626775266036-116a5c148c52?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mountain Logo">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+		<div class="logo">
+			<a href="#"><img src="images/Logo.PNG"></a>
+		</div>
 
-    <main id="main-content">
-        <section class="grid">
-            <div>
-                <!-- Web-sourced image for grid item 1 -->
-                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nature Scene 1">
-                <p>This is a beautiful nature scene.</p>
-            </div>
-            <div>
-                <!-- Web-sourced image for grid item 2 -->
-                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nature Scene 2">
-                <p>Another stunning view.</p>
-            </div>
-        </section>
 
-        <section class="flex">
-            <div>
-                <!-- Web-sourced image for flex item 1 -->
-                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Forest">
-                <p>Flex item 1: A forest view.</p>
-            </div>
-            <div>
-                <!-- Web-sourced image for flex item 2 -->
-                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Lake">
-                <p>Flex item 2: A serene lake.</p>
-            </div>
-            <div>
-                <!-- Web-sourced image for flex item 3 -->
-                <img src="https://images.unsplash.com/photo-1659935405041-1e76d8bd9de6?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountain">
-                <p>Flex item 3: A majestic mountain.</p>
-            </div>
-        </section>
-    </main>
+		<div class="search">
+			<form>
+				<input type="text" placeholder="Search in website">
+				<button type="submit">Search</button>
+			</form>
 
-    <footer>
-        <p>© Website | Images from <a href="https://unsplash.com">Unsplash</a></p>
-    </footer>
-    <script>
-    // Alert when the page loads
-    window.onload = function() {
-        alert("Welcome to the Sample Website!");
-    };
+		</div>
 
-    // Add hover effect to images
-    const images = document.querySelectorAll("img");
-    images.forEach(img => {
-        img.addEventListener("mouseenter", () => {
-            img.style.border = "3px solid teal";
-        });
-        img.addEventListener("mouseleave", () => {
-            img.style.border = "none";
-        });
-    });
+	</div> <!--Finish content header-->
 
-    // Alert when a nav link is clicked
-    const navLinks = document.querySelectorAll("nav a");
-    navLinks.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault(); // prevent the default navigation
-            alert(`You clicked on: ${link.textContent}`);
-        });
-    });
-    </script>
+	<!----------------------------------------------------------------------------------------------------------->
+
+	<div class="menu"> <!--content Menu-->
+
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Event</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+	</div> <!--Finish content Menu-->
+
+	<!----------------------------------------------------------------------------------------------------------->
+
+	<div class="content"> <!--content Banner-->
+
+		<div class="content-left"> <!--content left Banner-->
+
+			<img src="images/banner.jpg" alt="" />
+
+		</div><!--Finish left Banner-->
+
+		<div class="content-right"> <!--content right Banner-->
+
+			<h2>Your registration information</h2>
+
+			<form action="#" method="post">
+
+				<div class="container">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name.." />
+				</div>
+
+				<div class="container">
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+				</div>
+
+				<div class="container">
+					<label for="lname"> Your Phone</label>
+					<input type="text" id="phone" name="phone" placeholder="Your phone number.."
+						style="margin-left: 15px;" />
+				</div>
+
+				<div class="button">
+					<input type="submit" value="Send" />
+				</div>
+
+
+			</form>
+
+		</div><!-- Finish content right Banner-->
+
+	</div> <!--Finish content Banner-->
+
+	<!----------------------------------------------------------------------------------------------------------->
+
+	<div> <!--content Specializing in serving family dishes-->
+
+		<h1>Specializing in serving family dishes</h1>
+		<div class="details">
+			<div class="details-left"> <!--content left-->
+
+				<img src="images/nhahang.png" alt="Restaurant" />
+
+			</div> <!--Finish content left-->
+
+			<div class="details-right"><!--content right-->
+
+				<div>
+
+					<img src="images/Banner01.jpg" alt="" />
+					<img src="images/Banner03.jpg" alt="" />
+					<img src="images/Banner04.jpg" alt="" />
+
+				</div>
+
+				<div>
+
+					<p>
+						You are looking for an ideal space to enjoy delicious meals and important holidays with friends
+						or families, making sure you consider many things: price, food quality... So if you're still
+						struggling to find a suitable place, don't ignore the name <span>Good Taste</span> RESTAURANT.
+					</p>
+					<p>
+						Located right on the front of Nguyen Van Luong street, <span>Good Taste</span> RESTAURANT opens
+						from 9am and will be an ideal stopping place for groups of friends or families to come for their
+						parties. Designed with a rustic architectural style, this restaurant uses earth tones and brick
+						colors as the main theme, accompanied by a garden space with three airy sides.
+					</p>
+
+					<div class="book-button">Book Now</div>
+
+				</div>
+
+			</div> <!--Finish cotent right-->
+		</div>
+		<div style="clear: both;"></div>
+
+	</div> <!--Finish content Specializing in serving family dishes-->
+
+	<!----------------------------------------------------------------------------------------------------------->
+
+	<div> <!--content LIST OF DISHES-->
+
+		<h1>LIST OF DISHES</h1>
+
+		<div class="list-dishes">
+
+			<div class="dish">
+				<img src="images/goi-mang-tom-thit.jpg" alt="Bamboo shoot, shrimp and meat salad" />
+				<div class="dish-info">
+					<h3>Bamboo shoot, shrimp and meat salad</h3>
+					<h3>Price : 10$</h3>
+					<button class="dish-btn">Buy Now</button>
+				</div>
+			</div>
+		
+			<div class="dish">
+				<img src="images/tom-su-nuong-muoi-ot.jpg" alt="Grilled shrimp with salt and chili" />
+				<div class="dish-info">
+					<h3>Grilled shrimp with salt and chili</h3>
+					<h3>Price : 12$</h3>
+					<button class="dish-btn">Book Now</button>
+				</div>
+			</div>
+		
+		</div>
+		
+
+		</div>
+
+		<!------------------------------------------------------------------------------->
+
+		<div class="list-dishes">
+
+			<div> <!--third dish content-->
+
+				<img src="images/Canh ga nuong muoi ot.jpg" alt="Grilled chicken wings with salt and chili" />
+
+				<h3>Grilled chicken wings with salt and chili</h3>
+
+				<h3>Price : 8$</h3>
+
+				<div>
+					Buy Now
+				</div>
+
+
+			</div> <!--Finish third dish content-->
+
+			<div> <!--fourth dish content-->
+
+				<img src="images/ca-chem-chien.jpg" alt="Crispy fried sea bass" />
+
+				<h3>Crispy fried sea bass</h3>
+
+				<h3>Price : 10$</h3>
+
+				<div>
+					Book Now
+				</div>
+
+
+			</div> <!--fourth dish content-->
+
+		</div>
+
+	</div> <!--content LIST OF DISHES-->
+
+
+	<div> <!--content footer-->
+
+		<p>Email : goodTaste@gmail.com</p>
+		<p>Address: 100/4 Nguyen Van Luong,Go vap District, HCMC</p>
+		<h5>&copy; Copyright 2024. goodTaste.com</h5>
+
+	</div> <!--Finish content footer-->
+
+
 </body>
+
 </html>
